@@ -1,0 +1,4 @@
+navigate-to-pickable robo coke
+pickup coke robo
+navigate-to-container robo sink coke
+place coke robo sink

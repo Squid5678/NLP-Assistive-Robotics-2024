@@ -1,0 +1,5 @@
+<launch>
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+  <node name="model_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-sdf -x 5.76678 -y 0.950109 -z 0.817812 -Y 1.57 -file /home/ruinian/.gazebo/models/coke_can/model.sdf -model coke_can"/>
+</launch>

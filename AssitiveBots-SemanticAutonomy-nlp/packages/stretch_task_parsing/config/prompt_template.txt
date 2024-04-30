@@ -1,0 +1,27 @@
+First I am providing the domain definition of the robotic task with pick-n-place and navigation:
+domain_definition
+Then here is one example of problem definition which misses goal specification:
+(define (problem pick_place_scenario)
+    (:domain pick_and_place_nav)
+    (:objects 
+        apple - object
+        basket - object
+        robo - robot
+    )
+
+    (:init 
+        (GRASPABLE apple)
+        (CONTAINABLE basket)
+        (free robo)
+    )
+)
+Your job is to extract the definition of goal specification based on human instruction. 
+For example, the human instruction is "move the apple in the fridge to the basket on the dining_table". 
+The extracted goal specification should be the following:
+(:goal 
+    (contain apple basket)
+)
+Now for the test case, the problem definition is:
+test_problem_definition
+The human instruction is "test_human_instruction".
+Provide me with the corresponding goal specification without any other text. 
